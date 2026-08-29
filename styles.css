@@ -1,0 +1,159 @@
+/* 参考 GitHub Pages Minimal 主题：左栏固定 + 右侧正文，纯文字极简 */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 50px;
+  background: #fff;
+  font: 16px/1.7 "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans",
+    Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.wrapper {
+  width: 920px;
+  margin: 0 auto;
+}
+
+/* 左侧固定栏 */
+header {
+  width: 300px;
+  float: left;
+  position: fixed;
+}
+
+header img.avatar {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 0 16px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  color: #222;
+  line-height: 1.1;
+}
+
+header p.view {
+  margin: 0 0 14px;
+  color: #555;
+  font-size: 15px;
+}
+
+header p.links {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+header a {
+  color: #267cb9;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #069;
+  font-weight: bold;
+}
+
+/* 右侧正文 */
+section {
+  width: 560px;
+  float: right;
+}
+
+h2 {
+  margin: 26px 0 10px;
+  font-size: 22px;
+  color: #333;
+  line-height: 1.2;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 6px;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 18px 0 6px;
+  font-size: 17px;
+  color: #444;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+ul {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #267cb9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+}
+
+p.tags {
+  margin-top: -6px;
+  font-size: 14px;
+  color: #888;
+}
+
+footer {
+  clear: both;
+  padding-top: 24px;
+  color: #888;
+}
+
+/* 移动端：左栏与正文堆叠 */
+@media (max-width: 960px) {
+  .wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  header,
+  section,
+  footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
+
+  header {
+    padding-bottom: 18px;
+  }
+
+  section {
+    padding: 20px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 24px 16px;
+  }
+}
