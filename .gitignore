@@ -4,3 +4,6 @@ build/
 
 # local reference files (do not publish)
 reference/
+
+# internal markdown notes (do not publish)
+markdown_source/
